@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="488.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sn.dev.ramadanapp2024.controller.DesignController">
+   <children>
+      <VBox layoutX="21.0" layoutY="42.0" prefHeight="275.0" prefWidth="241.0" spacing="15.0">
+         <children>
+            <Text lineSpacing="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NomComplet" />
+            <TextField fx:id="NomTab" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Montant" />
+            <TextField fx:id="MontantTab" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Type Operation" />
+            <ComboBox fx:id="TypeOperationTab" prefWidth="150.0" />
+         </children>
+      </VBox>
+      <TableView fx:id="tableCol" layoutX="284.0" layoutY="42.0" prefHeight="310.0" prefWidth="363.0">
+        <columns>
+          <TableColumn fx:id="IdCol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="NomCol" prefWidth="75.0" text="NomComplet" />
+            <TableColumn fx:id="MontantCol" prefWidth="75.0" text="Montant" />
+            <TableColumn fx:id="TypeOpCol" prefWidth="75.0" text="Type Operation" />
+            <TableColumn fx:id="DateOpColl" prefWidth="75.0" text="Date Operation" />
+        </columns>
+      </TableView>
+      <ButtonBar layoutX="142.0" layoutY="394.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button fx:id="saveBTN" mnemonicParsing="false" text="SAVE" />
+            <Button fx:id="depotBTN" layoutX="135.0" layoutY="18.0" mnemonicParsing="false" text="DEPOT" />
+            <Button fx:id="retraitBTN" layoutX="135.0" layoutY="18.0" mnemonicParsing="false" text="RETRAIT" />
+            <Button fx:id="allBTN" layoutX="200.0" layoutY="18.0" mnemonicParsing="false" text="All" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
